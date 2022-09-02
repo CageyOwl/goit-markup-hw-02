@@ -1,98 +1,31 @@
 :root {
+    --general-font: 'Roboto', sans-serif;
+    --general-font-size: 14px;
+    --general-line-height: 1.16;
     --logo-font: 'Raleway', sans-serif;
-    --content-font: 'Roboto', sans-serif;
-    --content-font-size: 14px;
     --logo-font-size: 26px;
-    --line-height-relative: 1.16;
 
-    --header-logo-color: #000;
-    --hero-bg-color: #2f303a;
-    --hero-footer-font-color: #fff;
-    --footer-font-transparent: #fff9;
+    --general-bg-color: #fff;
+    --general-font-color: #757575;
+    --custom-bg-dark-color: #2f303a;
+    --custom-bg-light-color: #f5f4fa;
+    --custom-black: #212121;
     --accentuation-color: #2196f3;
-    --title-color: #212121;
-    --content-font-color: #757575;
+    --footer-font-transparent: #fff9;
+    --nav-logo-font-color: #000;
+    --filter-button-bg-color: #f5f4fa;
 }
 
 body {
-    font-family: var(--content-font);
-    font-size: var(--content-font-size);
+    font-family: var(--general-font);
+    font-size: var(--general-font-size);
+    line-height: var(--general-line-height);
     font-weight: 400;
-    line-height: var(--line-height-relative);
 
-    color: var(--content-font-color);
+    color: var(--general-font-color);
 }
 
-/*
- * PARTICULAR AND SHARED RULES
- */
-
- .logo {
-    font-family: var(--logo-font);
-    font-weight: 700;
-    font-size: var(--logo-font-size);
- }
-
- .black-text {
-    color: var(--title-color);
- }
-
- .unformatted-list {
-    list-style: none;
-    padding-inline-start: 0;
- }
-
-/*
- * HEADER
- */
-
-.header-logo {
-    color: var(--header-logo-color);
-}
-
-.logo-web {
-    color: var(--accentuation-color);
-}
-
- .accentuated-nav-ref {
-    color: var(--accentuation-color);
-}
-
- .header-contact {
-    color: inherit;
- }
-
- .nav-item,
- .accentuated-nav-item,
- .header-contact {
-    font-weight: 500;
- }
-
-/*
- * SECTION HERO 
- */
-
-.hero {
-    background-color: var(--hero-bg-color);
-    color: var(--hero-footer-font-color);
-}
-
-.hero-title {
-    font-size: 44px;
-    font-weight: 900;
-}
-
-.hero-button {
-    font-size: 16px;
-    font-weight: 700;
-
-    background-color: var(--accentuation-color);
-    color: var(--hero-footer-font-color);
-}
-
-/*
- * SECTION ADVANTAGES 
- */
+/* PARTICULAR AND SHARED RULES */
 
  .visually-hidden {
     position: absolute;
@@ -102,39 +35,169 @@ body {
 	clip: rect(0,0,0,0);
  }
 
- .advantages-item-title {
-    font-size: 16px;
+ .accentuated {
+    color: var(--accentuation-color);
+ }
+
+ .logo {
+    font-family: var(--logo-font);
+    font-size: var(--logo-font-size);
     font-weight: 700;
  }
 
- /*
-  * SECTION SERVICES AND TEAM
-  */
+ .logo-web {
+    color: var(--accentuation-color);
+ }
 
-.services-title,
-.team-title {
+ .section-title {
     font-size: 36px;
     font-weight: 700;
-}
 
-.team-member-name,
-.team-member-position {
+    color: var(--custom-black);
+ }
+
+ .nav-pages-list,
+ .nav-contacts-list,
+ .advantages-list,
+ .services-list,
+ .team-members-list,
+ .footer-contacts-list,
+ .projects-links-list,
+ .portfolio-filter-buttons-list {
+    list-style: none;
+    padding: 0;
+ }
+
+ .logo,
+ .accentuated,
+ .nav-page-link,
+ .nav-contact-link,
+ .footer-address-link,
+ .footer-contact-link,
+ .projects-item-link {
+    font-style: normal;
+    text-decoration: none;
+ }
+
+ .nav-page-link:hover,
+ .nav-contact-link:hover,
+ .footer-address-link:hover,
+ .footer-contact-link:hover {
+    color: var(--accentuation-color);
+ }
+
+ .nav-page-link:focus,
+ .nav-contact-link:focus,
+ .footer-address-link:focus,
+ .footer-contact-link:focus {
+    color: var(--accentuation-color);
+ }
+
+ /* HEADER */
+
+ .nav-logo {
+    color: var(--nav-logo-font-color);
+ }
+
+ .nav-pages-list,
+ .nav-contacts-list {
+    font-weight: 500;
+ }
+
+ .nav-page-link {
+    color: var(--custom-black);
+ }
+
+ .nav-contact-link {
+    color: var(--general-font-color);
+ }
+
+ /* SECTION HERO */
+
+ .hero {
+    background-color: var(--custom-bg-dark-color);
+    color: var(--general-bg-color);
+ }
+
+ .hero-title {
+    font-size: 44px;
+    font-weight: 900;
+ }
+
+ .hero-button {
+    font-size: 16px;
+    font-weight: 700;
+
+    background-color: var(--accentuation-color);
+    color: var(--general-bg-color);
+ }
+
+ /* SECTION ADVANTAGES */
+
+ .advantage-title {
+    font-weight: 700;
+    color: var(--custom-black);
+ }
+
+ /* SECTION SERVICES */
+
+ /* SECTION TEAM */
+
+ .team {
+    background-color: var(--custom-bg-light-color);
+ }
+
+.team-members-list {
     font-size: 16px;
 }
 
-/*
- * FOOTER 
- */
-
-.foooter {
-    background-color: var(--hero-bg-color);
+.team-member {
+    background-color: var(--general-bg-color);
 }
 
-.footer-logo,
-.footer-address {
-    color: var(--hero-footer-font-color);
+.team-member-name {
+    font-weight: 500;
+    color: var(--custom-black);
 }
 
-.footer-contact {
+/* FOOTER */
+
+.footer-custom {
+    background-color: var(--custom-bg-dark-color);
+}
+
+.footer-logo {
+    color: var(--general-bg-color);
+ }
+
+ .footer-address-link {
+    color: var(--general-bg-color);
+ }
+
+ .footer-contact-link {
     color: var(--footer-font-transparent);
-}
+ }
+
+ /* Portfolio */
+
+ .portfolio-filter-button {
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+
+    background-color: var(--filter-button-bg-color);
+    color: var(--custom-black);
+ }
+
+ .project-title {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: var(--custom-black);
+ }
+
+ .project-type {
+    font-size: 16px;
+
+    color: var(--general-font-color);
+ }
