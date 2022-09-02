@@ -1,0 +1,140 @@
+:root {
+    --logo-font: 'Raleway', sans-serif;
+    --content-font: 'Roboto', sans-serif;
+    --content-font-size: 14px;
+    --logo-font-size: 26px;
+    --line-height-relative: 1.16;
+
+    --header-logo-color: #000;
+    --hero-bg-color: #2f303a;
+    --hero-footer-font-color: #fff;
+    --footer-font-transparent: #fff9;
+    --accentuation-color: #2196f3;
+    --title-color: #212121;
+    --content-font-color: #757575;
+}
+
+body {
+    font-family: var(--content-font);
+    font-size: var(--content-font-size);
+    font-weight: 400;
+    line-height: var(--line-height-relative);
+
+    color: var(--content-font-color);
+}
+
+/*
+ * PARTICULAR AND SHARED RULES
+ */
+
+ .logo {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: var(--logo-font-size);
+ }
+
+ .black-text {
+    color: var(--title-color);
+ }
+
+ .unformatted-list {
+    list-style: none;
+    padding-inline-start: 0;
+ }
+
+/*
+ * HEADER
+ */
+
+.header-logo {
+    color: var(--header-logo-color);
+}
+
+.logo-web {
+    color: var(--accentuation-color);
+}
+
+ .accentuated-nav-ref {
+    color: var(--accentuation-color);
+}
+
+ .header-contact {
+    color: inherit;
+ }
+
+ .nav-item,
+ .accentuated-nav-item,
+ .header-contact {
+    font-weight: 500;
+ }
+
+/*
+ * SECTION HERO 
+ */
+
+.hero {
+    background-color: var(--hero-bg-color);
+    color: var(--hero-footer-font-color);
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.hero-button {
+    font-size: 16px;
+    font-weight: 700;
+
+    background-color: var(--accentuation-color);
+    color: var(--hero-footer-font-color);
+}
+
+/*
+ * SECTION ADVANTAGES 
+ */
+
+ .visually-hidden {
+    position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0,0,0,0);
+ }
+
+ .advantages-item-title {
+    font-size: 16px;
+    font-weight: 700;
+ }
+
+ /*
+  * SECTION SERVICES AND TEAM
+  */
+
+.services-title,
+.team-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.team-member-name,
+.team-member-position {
+    font-size: 16px;
+}
+
+/*
+ * FOOTER 
+ */
+
+.foooter {
+    background-color: var(--hero-bg-color);
+}
+
+.footer-logo,
+.footer-address {
+    color: var(--hero-footer-font-color);
+}
+
+.footer-contact {
+    color: var(--footer-font-transparent);
+}
