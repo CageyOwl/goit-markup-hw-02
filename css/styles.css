@@ -28,7 +28,7 @@ body {
 /* PARTICULAR AND SHARED RULES */
 
  .visually-hidden {
-    position: absolute;
+   position: absolute;
 	width: 1px;
 	height: 1px;
 	margin: -1px;
@@ -62,7 +62,7 @@ body {
  .services-list,
  .team-members-list,
  .footer-contacts-list,
- .projects-links-list,
+ .projects-list,
  .portfolio-filter-buttons-list {
     list-style: none;
     padding: 0;
@@ -91,6 +91,11 @@ body {
  .footer-address-link:focus,
  .footer-contact-link:focus {
     color: var(--accentuation-color);
+ }
+
+ .hero-button,
+ .portfolio-filter-button {
+   cursor: pointer;
  }
 
  /* HEADER */
@@ -181,12 +186,19 @@ body {
  /* Portfolio */
 
  .portfolio-filter-button {
-    font-size: 16px;
-    font-weight: 500;
-    border: 0;
+   font-family: inherit;
+   font-size: 16px;
+   font-weight: 500;
+   border: 0;
 
-    background-color: var(--filter-button-bg-color);
-    color: var(--custom-black);
+   background-color: var(--filter-button-bg-color);
+   color: var(--custom-black);
+ }
+
+ .portfolio-filter-button:hover,
+ .portfolio-filter-button:focus {
+   background-color: var(--accentuation-color);
+   color: var(--general-bg-color);
  }
 
  .project-title {
