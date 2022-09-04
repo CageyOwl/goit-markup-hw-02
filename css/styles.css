@@ -1,10 +1,4 @@
 :root {
-    --general-font: 'Roboto', sans-serif;
-    --general-font-size: 14px;
-    --general-line-height: 1.16;
-    --logo-font: 'Raleway', sans-serif;
-    --logo-font-size: 26px;
-
     --general-bg-color: #fff;
     --general-font-color: #757575;
     --custom-bg-dark-color: #2f303a;
@@ -17,11 +11,12 @@
 }
 
 body {
-    font-family: var(--general-font);
-    font-size: var(--general-font-size);
-    line-height: var(--general-line-height);
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
 
+    background-color: var(--general-bg-color);
     color: var(--general-font-color);
 }
 
@@ -40,9 +35,10 @@ body {
  }
 
  .logo {
-    font-family: var(--logo-font);
-    font-size: var(--logo-font-size);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
     font-weight: 700;
+    line-height: 1;
  }
 
  .logo-web {
@@ -52,6 +48,8 @@ body {
  .section-title {
     font-size: 36px;
     font-weight: 700;
+    text-align: center;
+    line-height: 1;
 
     color: var(--custom-black);
  }
@@ -93,11 +91,6 @@ body {
     color: var(--accentuation-color);
  }
 
- .hero-button,
- .portfolio-filter-button {
-   cursor: pointer;
- }
-
  /* HEADER */
 
  .nav-logo {
@@ -107,6 +100,8 @@ body {
  .nav-pages-list,
  .nav-contacts-list {
     font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
  }
 
  .nav-page-link {
@@ -127,11 +122,18 @@ body {
  .hero-title {
     font-size: 44px;
     font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.16;
+    letter-spacing: 0.06em;
  }
 
  .hero-button {
+    font-family: inherit;
     font-size: 16px;
     font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    cursor: pointer;
 
     background-color: var(--accentuation-color);
     color: var(--general-bg-color);
@@ -140,7 +142,11 @@ body {
  /* SECTION ADVANTAGES */
 
  .advantage-title {
+    font-size: inherit;
     font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+
     color: var(--custom-black);
  }
 
@@ -152,16 +158,17 @@ body {
     background-color: var(--custom-bg-light-color);
  }
 
-.team-members-list {
-    font-size: 16px;
-}
-
 .team-member {
-    background-color: var(--general-bg-color);
+   font-size: 16px;
+   line-height: 1;
+
+   background-color: var(--general-bg-color);
 }
 
 .team-member-name {
+    font-size: inherit;
     font-weight: 500;
+
     color: var(--custom-black);
 }
 
@@ -189,7 +196,10 @@ body {
    font-family: inherit;
    font-size: 16px;
    font-weight: 500;
+   line-height: 1.39;
+   letter-spacing: 0.03em;
    border: 0;
+   cursor: pointer;
 
    background-color: var(--filter-button-bg-color);
    color: var(--custom-black);
@@ -204,12 +214,15 @@ body {
  .project-title {
     font-size: 18px;
     font-weight: 700;
+    line-height: 1.71;
+    letter-spacing: 0.06em;
 
     color: var(--custom-black);
  }
 
  .project-type {
     font-size: 16px;
+    line-height: 1.6;
 
     color: var(--general-font-color);
  }
